@@ -13,4 +13,5 @@ class NewsModels extends Model {
 
         return $this->where(['slug' => $slug])->first();
     }
+    protected $allowedFields = ['title', 'slug', 'body'];
 }
